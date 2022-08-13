@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,55 @@
     <link rel="stylesheet" href="contact.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="nav">
-        <img src="./images/logo-white-01.png" width="100px" alt="">
-        <div class="navbar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
+    <div class="max-2">
+        <div class="nav">
+            <img src="./images/logo-white-01.png" width="100px" alt="">
+            <div class="navbar" id="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+            <div id="menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
         </div>
     </div>
     <div id="contacthead">
         <h1>Contact Us</h1>
-    
-    
-        <p>Let's talk about your website or project.send us a message and </p>
-    
-     
-        <p>we will be in touch within one business day</p>
-     </div>
-     <section id="contactus">
+        <p>Let's talk about your website or project.send us a message and we will be in touch within one business day</p>
+    </div>
+    <div id="contactus">
         <div id="contact-box">
-           <div class="contact-method" id="insta">
-               <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLqVHY7w08ZP9ZjfETkfLJ-ubQjUY6WORWjA&usqp=CAU" alt="">
-           </div>
-           <div class="contact-method">
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaAuJC3T4we7EMGLKHmlqoN960tceVmxPlfg&usqp=CAU" alt="">
-           </div>
-           <div class="contact-method">
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkbS_0UctbASjDKIPHmTYl8rVasZqnJRcyA&usqp=CAU
+            <div class="contact-method" id="insta">
+                <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLqVHY7w08ZP9ZjfETkfLJ-ubQjUY6WORWjA&usqp=CAU"
+                    alt="">
+            </div>
+            <div class="contact-method">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaAuJC3T4we7EMGLKHmlqoN960tceVmxPlfg&usqp=CAU"
+                    alt="">
+            </div>
+            <div class="contact-method">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkbS_0UctbASjDKIPHmTYl8rVasZqnJRcyA&usqp=CAU
                " alt="">
-           </div>
-           <div class="contact-method">
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxHMW-7BbL7XMYi37Q1B3UdzD84FjaBQH-Q&usqp=CAU" alt="">
-           </div>
+            </div>
+            <div class="contact-method">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxHMW-7BbL7XMYi37Q1B3UdzD84FjaBQH-Q&usqp=CAU"
+                    alt="">
+            </div>
         </div>
-    </section>
+    </div>
     <div class="back">
         <div class="max">
             <div class="footer">
                 <div class="col">
                     <img src="./images/logo-white-01.png" width="100px" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolnatur, esse officiis. Veniam totam aut possimus corrupti! adipisicing elit. Nulla, repudiandae?
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolnatur, esse officiis. Veniam totam aut
+                        possimus corrupti! adipisicing elit. Nulla, repudiandae?
                     </p>
                 </div>
                 <div class="col">
@@ -63,6 +71,18 @@
             <p class="copy">Copyright © SYMBIOSIS 2022</p>
         </div>
     </div>
-   
+    <script>
+        const nav = document.getElementById('navbar')
+        nav.style.maxHeight="0%"
+        document.getElementById('menu').addEventListener('click', () => {
+            if (nav.style.maxHeight == "0%") {
+                nav.style.maxHeight = "100%"
+            }
+            else {
+                nav.style.maxHeight = "0%"
+            }
+        })
+    </script>
 </body>
+
 </html>

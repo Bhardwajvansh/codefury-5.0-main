@@ -4,17 +4,24 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+.max{
+    max-width: 1200px;
+    margin: auto;
+}
+.max-2{
+    background: #f7955b;
+}
 .nav{
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     align-items: center;
     padding: 10px 40px;
-    /* max-width: 1200px;
-    margin: auto; */
-    background: radial-gradient(#f1e1c2,#f7955b);
 }
 
 .navbar{
     flex: 1;
+    transition: max-height 0.5s ease-in-out;
 }
 .navbar ul{
     text-align: right;
@@ -26,7 +33,7 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: rgb(250, 122, 2);
+    color: black;
     transition: border-bottom 0.1s ease-in-out;
 }
 .navbar ul li a:hover{
@@ -49,35 +56,40 @@
     background: radial-gradient(#f1e1c2,#f7955b);
 
 }
-#contacthead h1{
+#contacthead {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 14px 6px;
     color: white;
+    flex-direction: column;
+    color: black;
 }
 #contacthead p{
+    padding: 2px 6px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+#contactus{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px 6px;
-    color: rgb(250, 122, 2);
-    font-weight: bold;
-}
-#contactus{
-    position: absolute;
-    top: 342px;
-    left: 40%;
-    height: 450px;
+    height: 100%;
+    width: 100%;
     background: radial-gradient(#f1e1c2,#fbfafa);
-    width: 314px;
-    box-shadow: -5px -6px 57px #d94e0f;
 }
 #contact-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 350px;
     align-items: center; 
+    margin: 20px ;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: -5px -6px 57px #d94e0f;
 }
 .contact-method{
     padding: 8px;
@@ -89,8 +101,21 @@
     font-family: 'Bree Serif', serif;
     font-size: 1.8rem;
     color: rgb(98, 8, 88);
-    margin-top: 44px;
-    
+    margin-top: 44px;   
+}
+#menu{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.line{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 6px;
 }
 
 #insta{
@@ -107,11 +132,11 @@
     background: black;
     position: absolute;
     width: 100%;
-    top: 846px;
 }
 .footer{
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .col{
     flex-basis: 50%;
@@ -143,4 +168,42 @@
     padding: 20px;
     text-align: center;
     color: grey;
+}
+
+
+@media only screen and (max-width:500px){
+    #menu{
+        display: flex;
+        margin-left: 200px;
+    }
+    .navbar{
+        position: absolute;
+        right:0;
+        top: 80px;
+        width: 100%;
+        overflow: hidden;
+        background: black;
+    }
+    .navbar ul li{
+        display: block;
+        margin-top: 10px;
+        margin-right: 40px;
+        padding: 10px;
+    }
+    .navbar ul li a{
+        color: white;
+    }
+    .left{
+        flex-basis: 100%;
+
+    }
+    .right img{
+        width: 100%;
+    }
+    .right{
+        flex-basis: 100%;
+    }
+    .col{
+        flex-basis: 100%;
+    }
 }
