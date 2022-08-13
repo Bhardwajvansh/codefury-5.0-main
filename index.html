@@ -15,12 +15,17 @@
         <div class="max">
             <div class="nav">
                 <img src="./images/logo-white-01.png" width="100px" alt="">
-                <div class="navbar">
+                <div class="navbar" id="navbar">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./contact.html">Contact Us</a></li>
                         <li><a href="./about.html">About</a></li>
                     </ul>
+                </div>
+                <div id="menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
                 </div>
             </div>
             <div class="welcome">
@@ -61,6 +66,18 @@
             <p class="copy">Copyright © SYMBIOSIS 2022</p>
         </div>
     </div>
+    <script>
+        const nav=document.getElementById('navbar')
+        // nav.style.maxHeight="0%"
+        document.getElementById('menu').addEventListener('click',()=>{
+            if(nav.style.maxHeight=="0%") {
+                nav.style.maxHeight="100%"
+            }
+            else {
+                nav.style.maxHeight="0%"
+            }
+        })
+    </script>
 </body>
 
 </html>

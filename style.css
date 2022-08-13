@@ -19,6 +19,7 @@
 }
 .navbar{
     flex: 1;
+    transition: max-height 0.5s ease-in-out;
 }
 .navbar ul{
     text-align: right;
@@ -42,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .left{
     padding: 40px;
@@ -81,6 +83,20 @@
 .margin{
     margin-left: 20px;
 }
+#menu{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.line{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 6px;
+}
 
 /* footer */
 
@@ -90,6 +106,7 @@
 .footer{
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .col{
     flex-basis: 50%;
@@ -121,4 +138,41 @@
     padding: 20px;
     text-align: center;
     color: grey;
+}
+
+@media only screen and (max-width:500px){
+    #menu{
+        display: flex;
+        margin-left: 200px;
+    }
+    .navbar{
+        position: absolute;
+        right:0;
+        top: 80px;
+        width: 100%;
+        overflow: hidden;
+        background: black;
+    }
+    .navbar ul li{
+        display: block;
+        margin-top: 10px;
+        margin-right: 40px;
+        padding: 10px;
+    }
+    .navbar ul li a{
+        color: white;
+    }
+    .left{
+        flex-basis: 100%;
+
+    }
+    .right img{
+        width: 100%;
+    }
+    .right{
+        flex-basis: 100%;
+    }
+    .col{
+        flex-basis: 100%;
+    }
 }

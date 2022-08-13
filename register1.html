@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> register </title>
+        <link rel="stylesheet" href="../static/style.css">       
+    </head>
+    <body>
+        <div class="registercontent" align="center">
+            <div class="registertop">
+                <h1>Register</h1>
+            </div></br></br>
+            <div class="registerbottom">
+              <form action="{{ url_for('register')}}" method="post" autocomplete="off">
+            <div class="msg">{{ msg }}</div>
+            <input type="text" name="username" placeholder="Enter Your Username" class="textbox" id="username" required></br></br>
+            <input type="password" name="password" placeholder="Enter Your Password" class="textbox" id="password" required></br></br>
+            <input type="text" name="comp_name" placeholder="Enter Company Name" class="textbox" id="comp_name" required></br></br>
+            <input type="text" name="address" placeholder="Enter Your Company Address" class="textbox" id="address" required></br></br>
+            <input type="text" name="company_email" placeholder="Enter Your Compnay Email " class="textbox" id="company_email" required></br></br>
+            <input type="text" name="phone" placeholder="Enter Your phone" class="textbox" id="phone" required></br></br>
+            <input type="text" name="product_desc" placeholder="Enter Product Desc" class="textbox" id="product_desc" required></br></br>
+            <input type="text" name="contact_person_email" placeholder="Enter Conatct Email" class="textbox" id="contact_person_email" required></br></br>
+            <input type="text" name="Support_needed" placeholder="Enter Support type" class="textbox" id="Support_needed" required></br></br>
+            <input type="text" name="Website" placeholder="Enter Your Website" class="textbox" id="Website" required></br></br>
+            <input type="submit" class="btn" value="Register">
+              </form>
+              <p class="worddark">Already have account? <a class="worddark" href="{{ url_for('login')}}">Login here</a></p>
+            </div>
+        </div>
+    </body>
+</html>

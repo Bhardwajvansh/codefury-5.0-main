@@ -1,0 +1,63 @@
+<html lang="en">
+    <head>
+        <title>display</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body bgcolor="#e6ffee">
+        <div class="one">
+            
+            <div class="content" align="center">
+                <div class="topbar">
+                    <h2>Welcome!! You are in Display Page!! </h2>                        
+                </div>  </br>
+                <div class="contentbar">
+                
+                    <h1>Your Details</h1>    </br>
+                     {% block content %}
+                        <div class="border">
+                            <table class="worddark"></br></br></br></br>
+                                <tr>
+                                    <td>Username:</td>
+                                    <td>{{ data['username'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Company Name:</td>
+                                    <td>{{ data['comp_name'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Company Address :</td>
+                                    <td>{{ data['address'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Company EMail :</td>
+                                    <td>{{ data['company_email'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td>{{ data['phone'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Product Details:</td>
+                                    <td>{{ data['product_desc'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Contact Person Email :</td>
+                                    <td>{{ data['contact_person_email'] }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Support Needed:</td>
+                                    <td>{{ data['Support_needed'] }}</td>
+                                </tr>  
+                                <tr>
+                                    <td>Website:</td>
+                                    <td>{{ data['Website'] }}</td>
+                                </tr>                          
+                            </table>
+                        </div>
+                    {% endblock %}                                           
+                </div>
+                  
+            </div>
+        </div>
+    </body>
+</html>
