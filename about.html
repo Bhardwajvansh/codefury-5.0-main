@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
     <title>ABOUT</title>
 </head>
+
 <body>
     <div class="background">
         <div class="max">
             <div class="nav">
-                <img src="./images/logo-white-01.png" width="100px" alt="">
-                <div class="navbar">
+                <img src="./images/logo-white-01.png" width="100px" alt="" />
+                <div class="navbar" id="navbar">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./contact.html">Contact Us</a></li>
-                        
                     </ul>
                 </div>
+                <div id="menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
             </div>
-            
         </div>
-      
-       <div class="description"> 
-        <div class="heading" > <h1><center>About Us</center></h1></div><br>
-            <h3>
-                <center>
-                    We, The Symbiosis Company want to establish a better connection between the upcoming startups and investers who recognise potential and want to fund these startups to make the productions smooth, ultimatly helping every party involves to make profit. <br>
-                </center>
 
-            </h3>
-       </div>
-    
-       
-       
-       
-<!--footer-->
-     
-    </div>    
+        <div class="description">
+            <div class="card">
+                <div class="heading">
+                    <h1>About Us</h1>
+                </div>
+                <br />
+                <h3>
+                    We, The Symbiosis Company want to establish a better connection
+                    between the upcoming startups and investers who recognise potential
+                    and want to fund these startups to make the productions smooth,
+                    ultimatly helping every party involves to make profit. <br />
+                </h3>
+            </div>
+        </div>
+
+        <!--footer-->
+    </div>
     <div class="back">
         <div class="max">
             <div class="footer">
                 <div class="col">
-                    <img src="./images/logo-white-01.png" width="100px" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolnatur, esse officiis. Veniam totam aut possimus corrupti! adipisicing elit. Nulla, repudiandae?
+                    <img src="./images/logo-white-01.png" width="100px" alt="" />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur Lorem ipsum dolnatur, esse
+                        officiis. Veniam totam aut possimus corrupti! adipisicing elit.
+                        Nulla, repudiandae?
                     </p>
                 </div>
                 <div class="col">
@@ -56,9 +64,21 @@
                     </ul>
                 </div>
             </div>
-            <hr>
+            <hr />
             <p class="copy">Copyright © SYMBIOSIS 2022</p>
         </div>
     </div>
-    </body>
-    </html>
+</body>
+<script>
+    const nav = document.getElementById("navbar");
+    nav.style.maxHeight = "0%"
+    document.getElementById("menu").addEventListener("click", () => {
+        if (nav.style.maxHeight == "0%") {
+            nav.style.maxHeight = "100%";
+        } else {
+            nav.style.maxHeight = "0%";
+        }
+    });
+</script>
+
+</html>
