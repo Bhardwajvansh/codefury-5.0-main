@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="details.css">
+    <title>Display Startup Info</title>
+</head>
+
+<body bgcolor="#e6ffee">
+        <div class="background">
+            <div class="max">
+                <div class="nav">
+                    <img src="./images/logo-white-01.png" width="100px" alt="" />
+                    <div class="navbar" id="navbar">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div id="menu">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" align="center">
+            <div class="card">
+                <div class="topbar">
+                    <h2>Welcome to Startup Info Display Page! </h2>
+                </div> </br>
+                <div class="contentbar">
+                    <h1>Startup Details</h1> </br>
+                    <div class="border">
+                        <table class="worddark"></br></br></br></br>
+                            <tr>
+                                <td class="text-1">Username:</td>
+                                <td class="text-2">ds</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Company Name:</td>
+                                <td class="text-2">qq</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Company Address :</td>
+                                <td class="text-2">qq</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Company EMail :</td>
+                                <td class="text-2">qq</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Phone:</td>
+                                <td class="text-2">11</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Product Details:</td>
+                                <td class="text-2">qq</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Contact Person Email :</td>
+                                <td class="text-2">qq</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Support Needed:</td>
+                                <td class="text-2">qq</td>
+                            </tr>
+                            <tr>
+                                <td class="text-1">Website:</td>
+                                <td class="text-2">qq</td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+
+            </div>
+
+        </div>
+    <!--footer-->
+    </div>
+    <div class="back">
+        <div class="max">
+            <div class="footer">
+                <div class="col">
+                    <img src="./images/logo-white-01.png" width="100px" alt="" />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur Lorem ipsum dolnatur, esse
+                        officiis. Veniam totam aut possimus corrupti! adipisicing elit.
+                        Nulla, repudiandae?
+                    </p>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copy">Copyright © SYMBIOSIS 2022</p>
+        </div>
+    </div>
+</body>
+<script>
+    const nav = document.getElementById("navbar");
+    nav.style.maxHeight = "0%"
+    document.getElementById("menu").addEventListener("click", () => {
+        if (nav.style.maxHeight == "0%") {
+            nav.style.maxHeight = "100%";
+        } else {
+            nav.style.maxHeight = "0%";
+        }
+    });
+</script>
+
+</html>
